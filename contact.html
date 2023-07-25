@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--Andre Lima alima6497@conestogac.on.ca-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="description" content="This is site is about css and html.">
+    <meta name="keywords" content="html,css,coding,web,development">
+	<title>Contact Us</title>
+
+</head>
+<body>
+	<header>
+		<img alt="logo" src="images/logo.png" id="logo">
+		<h1>Cooking with Andre</h1>
+	</header>
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="contact.html">Contact Us</a>
+	</nav>
+	<aside>
+		<h2>Shopping List</h2>
+		<ul>
+			<li>Eggs</li>
+			<li>Spagetti</li>
+			<li>Pancetta</li>
+		</ul>
+	</aside>
+	<main>
+		<h2>Contact Us</h2>
+		<form name="contact" id="myform" autocomplete="on">
+			<fieldset>
+				<legend>Personal Information</legend>
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" autofocus required>
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" required>
+				<label for="phone">Phone</label>
+				<input type="tel" name="phone" id="phone">
+				<label>Employment Status</label>
+				<select id="employment" name="employment" required>
+					<option Value="">--Select--</option>
+					<option Value="1">Student</option>
+					<option Value="2">Employed Full-Time</option>
+					<option Value="3">Employed Part-Time</option>
+					<option Value="4">Retired</option>
+					<option Value="5">Other</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>How did you hear about us?</legend>
+				<input type="radio" id="social" name="hear" value="social" required>
+				<label for="social">Social Media</label><br>
+				<input type="radio" id="friend" name="hear" value="friend">
+				<label for="friend">Friend</label><br>
+				<input type="radio" id="se" name="hear" value="se">
+				<label for="se">Search Engine</label><br>
+				<input type="radio" id="other" name="hear" value="other">
+				<label for="other">Other</label>
+			</fieldset>
+			<fieldset>
+				<legend>Tell us what you think!</legend>
+				<label>Comments<label>
+				<textarea id="comment" name="comment" placeholder="Comment here" required></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Submit</legend>
+				<label>I am not a robot</legend>
+				<input type="checkbox" id="notarobot" name="robot" value="notarobot"><br>
+				<input type="submit" value="Submit">
+				<input type="reset" value="Clear">
+			</fieldset>
+		</form>
+	</main>
+	<footer>
+		<p>&copy; 2023 Andre Lima 7266497</p>
+	</footer>
+</body>
+</html>
